@@ -1,0 +1,1 @@
+rootProject.name = "MS_PreOnboard_RajashekharKategoud"
