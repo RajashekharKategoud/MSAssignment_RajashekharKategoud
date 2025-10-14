@@ -11,7 +11,14 @@ import java.util.stream.Collectors;
  */
 public final class Day7Assignment {
 
-    private static final ExecutorService executor = Executors.newFixedThreadPool(5);
+    private static ExecutorService executor = Executors.newFixedThreadPool(5);
+
+    static void setExecutorForTesting(ExecutorService customExecutor) {
+        if (customExecutor != null) {
+            executor.shutdownNow();
+            executor = customExecutor;
+        }
+    }
 
     private Day7Assignment() {
         // utility class, prevent instantiation

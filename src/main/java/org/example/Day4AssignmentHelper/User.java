@@ -15,4 +15,16 @@ public class User {
     public String toString() {
         return "User{id=" + id + ", userName='" + userName + "', password='" + password + "'}";
     }
+
+    public int getId() {
+        return id;
+    }
+
+    public String getUserName() {
+        return userName;
+    }
+
+    public String getPassword() {
+        return password;
+    }
 }
